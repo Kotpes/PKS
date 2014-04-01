@@ -1,14 +1,6 @@
 
 jQuery(document).ready(function($) {
-	/** Add expanding to paragraphs **/
-	$("#expand").click(function() {		
-		$(this).parent( ".expand").removeClass('expand').addClass('expanded');
-		$(this).remove();
-	});
-	$("span#expand").click(function() {		
-		$(this).parent( ".expand").removeClass('expand').addClass('expanded');
-		$(this).remove();
-	});
+
 
 	/** Align last two categories on main page **/
 	$('.content .row .col-lg-3:nth-child(9)').addClass('col-md-offset-3');
@@ -27,8 +19,7 @@ jQuery(document).ready(function($) {
         }	    
 	    });
     }
-    else if ( $(window).width() < 1040 ) {
-    	
+    if ( $(window).width() < 1040 ) {    	
         $('.permanent_info').click(function(){
         	if ($(this).find('.head_info').hasClass('visible')) {
              	$(this).removeClass('full_height');   		
@@ -75,9 +66,10 @@ jQuery(document).ready(function($) {
 	    slideMargin: 17,
 	    infiniteLoop: false
 	});
-	// $().bxSlider();
-
-	 /** Adds read more buttons **/
+	$('.slider').bxSlider();
+	/** Article comments **/
+	$('.article_comments #submit').addClass('btn btn-primary btn-lg');
+	/** Adds read more buttons **/
 	var name = $('.article_content').find('h4').text();
 		var tutustu = 'TUTUSTU'; 
 		var syvenny = 'SYVENNY';
@@ -91,7 +83,8 @@ jQuery(document).ready(function($) {
 		    	$(this).nextUntil("h4").wrapAll('<div class="expand" />').parent().append('<span id="expand">NÄYTÄ LISÄÄ +</span>');
 		    }
 		});
-
+		/** Add expanding to paragraphs **/
+		
     /** Smooth scrolling with offset **/
 	  
     if ( $(window).width() > 1024 ) {

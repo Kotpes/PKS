@@ -4,6 +4,7 @@ if ( ! current_user_can( 'manage_options' ) ) {
     show_admin_bar( false );
 }
 
+
 add_filter('show_admin_bar', '__return_false');
 
 // Load the Theme CSS
@@ -51,7 +52,9 @@ function new_excerpt_more( $more ) {
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
-// Enable custom fields to categories
+//Images description
+
+
 
 
 

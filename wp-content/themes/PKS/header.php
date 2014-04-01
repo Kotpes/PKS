@@ -15,10 +15,10 @@
   </head>
   <body>
   <!-- NAVIGATION AND HEADER -->  
-	<div class="navigation">
+	<div class="mnavigation">
 		  <div class="container">
 		    <div class="row">
-			  <div class="logo col-lg-2 col-md-2 col-sm-2 col-xs-6"><h1>PKS OSAAVA</h1></div>
+			  <div class="logo col-lg-2 col-md-2 col-sm-2 col-xs-6"><h1><a href="<?php bloginfo('url'); ?>">PKS OSAAVA</a></h1></div>
 			  <div class="menu col-lg-6 col-md-6 col-sm-6 col-xs-6">		  	
 			  	<ul id="menu">
 				   <li><a href="<?php bloginfo('url'); ?>">ETUSIVU</a></li>

@@ -83,6 +83,7 @@
 	  			echo '<div class="category_color" style="background-color:'. $color_field .';"></div>	  				
   				    </div>
   		        </div>'; 
+  		       
   		    }
 		?>
 			</div>			
@@ -95,7 +96,6 @@
 	   	<div class="center_article col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
 	  	  	<div class="article_slider">
- 				
 	  	  	    <?php 
 			    $args = array(
 			       'orderby' => 'post_date',
@@ -107,7 +107,7 @@
 			     
 				<?php if ( have_posts() ) : while ( $the_query->have_posts()) : $the_query->the_post();  ?>
 
-					<?php get_template_part('content', 'articles'); ?>
+					<?php get_template_part('content', 'article'); ?>
 
 				<?php endwhile; endif; ?>			    
 		  	</div>
@@ -165,5 +165,8 @@
 	  		</div>
 	  	</div>
 	</div>
+
+
+
 
  <?php get_footer(); ?> 
