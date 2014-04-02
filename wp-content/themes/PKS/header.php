@@ -14,6 +14,7 @@
   <?php wp_head(); ?>
   </head>
   <body>
+  <div class="wrapper">
   <!-- NAVIGATION AND HEADER -->  
 	<div class="mnavigation">
 		  <div class="container">

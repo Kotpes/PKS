@@ -167,3 +167,16 @@
 	</div>
 
  <?php get_footer(); ?> 
+
+
+<?php
+$categories = get_the_category();
+$category_id = $categories[0]->cat_ID;
+query_posts('cat='.$category_id);
+while (have_posts()) : 
+
+  
+
+endwhile;
+?>
+
