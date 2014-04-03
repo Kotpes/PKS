@@ -254,7 +254,8 @@ a:hover {
 }
 .content h2,
 .articles h2,
-.footer h2 {
+.footer h2,
+#basic-page h2 {
 	color: #112140;
 	font-size: 2.4em;
 	font-weight: 600;
@@ -963,6 +964,130 @@ a:hover {
     z-index: 8;
 }
 
+/* REGISTRATION/PROFILE/LOGIN PAGE */
+
+#basic-page{
+	padding-top: 200px;
+	height: 100%;
+}
+
+#basic-page p{
+	color: #0c2240;
+}
+
+.bold{
+	font-weight: bold!important;
+}
+
+.align-left{
+	text-align: left!important;
+}
+
+.registerContactInfoHeading, .registerNameHeading, .registerAboutYourselfHeader, .send-confirmation-email, .nameHeader, .contactInfoHeader, .aboutYourselfHeader{
+	display: none;
+}
+
+.wppb_holder label{
+	text-transform: uppercase;
+	font-size: 13px;
+	color: #0c2240;
+	font-family: 'Lato', sans-serif;
+}
+
+.wppb_holder input{
+	width: 100%;
+	border: none;
+	font-size: 13px;
+	line-height: 15px;
+	padding: 10px;
+	color: #9ea7b3;
+	font-family: 'Lato', sans-serif;
+}
+
+.wppb_holder input:focus{
+	outline: none;
+}
+
+.wppb_holder input.submit.button{
+	max-width: 180px;
+	color: white;
+	background: #1074ef;
+	text-transform: uppercase;
+	font-weight:bold;
+	margin-top: 40px;
+}
+
+.wppb_holder input.remember-me.checkbox{
+	display: inline;
+	width: 20px;
+}
+
+.error{
+	color: red;
+	font-family: 'Lato', sans-serif;
+}
+
+.profile ul{
+	padding: 0;
+}
+
+.profile .article{
+	margin-bottom: 20px;
+}
+
+.fa.article_favourite a{
+	font-family: FontAwesome;
+	text-decoration: none;
+	color: white;
+}
+
+.fa.article_favourite a:hover{
+	opacity: 0.7;
+}
+
+.wpfp-hide{
+	display: none!important;
+}
+
+.fav-title{
+	margin-top: 40px;
+	color: #112140;
+	font-weight: bold;
+	font-family: 'Lato', sans-serif;
+}
+
+.profile ul{
+	margin-top: 40px;
+	color: #112140;
+	font-weight: bold;
+	font-family: 'Lato', sans-serif;
+	list-style-type: none;
+}
+
+.bottom .ldc-ul_cont{
+	background: none;
+	border: none;
+	font-family: FontAwesome;
+	color: white;
+	box-shadow: none;
+	margin: 0;
+	margin-left: 8px;
+
+}
+
+.bottom .ldc-ul_cont span{
+	margin-left: 5px;
+	font-size: 0.8em;
+	font-weight: 200;
+	font-family: 'Lato', sans-serif;
+}
+
+.bottom .ldc-ul_cont img{
+	display: none;
+}
+
+/* REGISTRATION PAGE END*/
+
 @media (min-width: 1200px) {
 	.category,
 	.category_color  {
@@ -1460,6 +1585,9 @@ a:hover {
 	}
 }
 @media (max-width: 600px) {
+	#basic-page{
+		padding-top: 102px;
+	}
 	.service_description .col-xs-4 {
 		width: 100%;
 	}

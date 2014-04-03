@@ -726,7 +726,14 @@ h2 {
     z-index: 8;
 }
 
+
 @media (min-width: 1200px) {
+	/* PAGE STYLE */
+	
+
+	
+	/*PAGE STYLE END */
+	
 	.category,
 	.category_color  {
 		width: 255px;
@@ -1352,6 +1359,10 @@ h2 {
 	}
 }
 
+#basic-page{
+	padding-top: 230px;
+	background: red;
+}
 
 
 
